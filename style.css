@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin:0;
+}
+
+header{
+  background: #a0f9;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px #0005;
+  position: fixed;
+  top:0;
+  z-index: 10;
+  left:0;
+  height: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  right:0;
+}
+
+header .action{
+  padding:0px 15px;
+  margin:0;
+}
+
+header .action .title{
+  font-family: sans-serif;
+  color:#fff;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.main{
+  padding:30px;
+  box-shadow: 0px 0px 10px #0005;
+  display:flex;
+  margin:80px 50px 0px 50px;
+  background: #eee;
+}
+
+
+.main .posts{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.main .post{
+  margin-bottom: 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  transition-duration: 100ms;
+  box-shadow: 0px 0px 5px #0005;
+}
+
+.main .post:hover{
+  scale:1.01;
+}
+
+.main .post .post-image{
+  background: #000;
+}
+
+.main aside{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-bottom: 30px;
+  background: #fff;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0px 20px;
+  box-shadow: 0px 0px 5px #0005
+}
+
+.main aside ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.main aside h1{
+  margin:20px 0;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.main aside ul a{
+  color:#229;
+  text-decoration: none;
+  font-size: 12pt;
+  padding:5px;
+}
+
+.main aside ul a:active, .main aside ul a:hover{
+  color:#923;
+}
+
+.main aside *{
+  display:flex;
+  flex-direction: column;
+}
+
+
+.main .post h1{
+  margin:0;
+}
+
+.main .post p{
+  margin:0;
+  margin-top: 5px;
+}
+
+.main .post .content{
+  box-shadow: 0px 0px 10px #0005;
+  padding: 15px;
+}
+
+footer{
+  background: #222;
+  color:#ddd;
+  padding:50px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width: 600px){
+  header{
+    height: 64px;
+  }
+  
+  .main{
+    margin:0;
+    flex-direction: column;
+    margin-top: 64px;
+    padding: 15px;
+  }
+  
+  .main .posts{
+    width: auto;
+  }
+  
+  .main aside{
+    width: auto;
+    margin:0;
+    padding-bottom: 10px;
+  }
+  
+}
